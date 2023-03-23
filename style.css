@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  background-image: url(./assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.holes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 54px;
+  margin: 200px auto 20px;
+  place-items: center;
+   
+  
+}
+
+.mole {
+  background-image: url(./assets/buraco.svg);
+  width: 222px;
+  height: 169px;
+  margin: 0 auto;
+   
+}
+
+.yes:hover {
+  width: 222px;
+  height: 169px;
+  animation: moleOut;
+  
+  animation-duration: .8s;
+}
+
+
+@keyframes moleOut {
+  10% {background-image: url("./assets/toupeira1.svg");}
+  30% {background-image: url("./assets/toupeira2.svg");}
+  50% {background-image: url("./assets/toupeira3.svg");}
+  70% {background-image: url("./assets/toupeira2.svg");}
+  100% {background-image: url("./assets/toupeira1.svg");}
+}
+
+
